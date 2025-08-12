@@ -1,0 +1,46 @@
+# === 核心依赖库列表 for EventsInterpreter Project ===
+
+# --- AI与数据处理 ---
+
+# 用于调用Google Gemini模型进行分析
+google-generativeai
+
+# 用于本地CSV数据存储与读取
+pandas
+
+
+# --- 数据抓取与接口 ---
+
+# 用于所有HTTP网络请求 (如NewsAPI)
+requests
+
+# 用于获取Google Trends市场关注度数据
+pytrends
+
+# 用于获取各大交易所的资金费率等数据
+ccxt
+
+
+# --- 通知模块 ---
+
+# 用于发送Telegram消息、图片、文件
+python-telegram-bot
+
+
+# --- 图片/PDF生成模块 ---
+# 我们最终选定的方案，用于将HTML渲染成图片或PDF
+# 注意：除了这个库，还需要在系统层面安装Chromium (pyppeteer会自动下载)
+pyppeteer
+
+
+# --- 曾使用但已废弃的库 ---
+# 下面的库在我们迭代过程中已被更好的方案取代，
+# 但在此列出以保证项目历史的完整性。
+# 在当前版本的项目中，你不是必须安装它们。
+
+# beautifulsoup4       # 用于早期RSS解析，现已被NewsAPI取代
+# lxml               # BeautifulSoup的解析器
+# feedparser         # 用于早期RSS解析
+# selenium           # 曾用于抓取动态网页
+# snscrape==0.7.0.20230622 # 曾用于抓取X平台，现已失效
+# imgkit             # 曾作为pyppeteer的轻量化替代方案，但其依赖已停止维护

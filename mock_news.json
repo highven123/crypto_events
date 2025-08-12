@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "time": "2025-08-07 08:00",
+    "source": "Investing.com",
+    "title": "Fed Chairman Powell hints at a potential interest rate hike in September",
+    "body": "In a recent interview, Fed Chairman Jerome Powell stated that the central bank is prepared to take further action to combat inflation, including a possible interest rate hike at the next meeting."
+  },
+  {
+    "id": 2,
+    "time": "2025-08-07 10:30",
+    "source": "CoinDesk",
+    "title": "SEC delays decision on Ethereum ETF approval",
+    "body": "The U.S. Securities and Exchange Commission has once again postponed its decision on the approval of several spot Ethereum ETFs, citing the need for more time to review the applications."
+  },
+  {
+    "id": 3,
+    "time": "2025-08-07 12:00",
+    "source": "Twitter/@GaryGensler",
+    "title": "Gary Gensler tweets about the need for clearer crypto regulations",
+    "body": "SEC Chairman Gary Gensler's latest tweet emphasizes the importance of protecting investors in the volatile crypto market and hints at upcoming regulatory frameworks."
+  }
+]
