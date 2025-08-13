@@ -4,16 +4,8 @@ from datetime import datetime
 import time
 import random
 
-# Etherscan V2 API (Multichain) 的基准URL
-ETHERSCAN_API_URL = "https://api.etherscan.io/api"
-
-# Etherscan API Key (用于监控地址的交易)
-# 已按照你的要求硬编码，但这仍然是 Etherscan API Key，不是 Covalent 的
-ETHERSCAN_API_KEY = "2ADA5QT1EJ5NI3ZISZB4IARHHIRRDQFESP"
-
-# Covalent API Key (用于获取巨鲸地址列表)
-# 已按照你的要求硬编码
-COVALENT_API_KEY = "cqt_rQWTBbkYq4pQrqfpt9CTmjwJp7mj"
+ETHERSCAN_API_KEY = os.getenv('ETHERSCAN_API_KEY') # <-- 修改为这行
+COVALENT_API_KEY = os.getenv('COVALENT_API_KEY')  
 
 def get_whale_addresses(min_eth_balance=1000, max_holders=100):
     """
