@@ -5,8 +5,8 @@ import datetime
 from pyppeteer import launch
 
 # --- 你的 Telegram 配置 ---
-BOT_TOKEN = "7876256245:AAEUELD5GRm0APzzlgozTy2rjBYIYw8Qzp4"
-CHAT_ID = "-1002883960310"
+BOT_TOKEN = os.getenv('BOT_TOKEN') # <-- 修改为这行
+CHAT_ID = os.getenv('CHAT_ID')  
 
 async def send_telegram_message(html_content):
     """
