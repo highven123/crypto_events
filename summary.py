@@ -11,7 +11,8 @@ from main import main
 from google_trends_monitor import get_google_trends_insights
 
 # --- 配置API Key ---
-genai.configure(api_key="AIzaSyDNpJUBeAc08-MCnXyaCZz3xNHVA2SaAPA") # 请替换为你的真实Key
+genai.configure(api_key=os.getenv('GOOGLE_API_KEY') # <-- 修改为这行
+) # 请替换为你的真实Key
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # --- [最终整合] 函数签名加入 trends_insights ---
