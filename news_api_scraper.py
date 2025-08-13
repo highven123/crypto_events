@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 # --- 配置区 ---
 # 你的NewsAPI.org API Key
-API_KEY = "d362bec904e643558c837840011cc706"
+API_KEY = os.getenv('NEWS_API_KEY') # <-- 修改为这行
 
 # --- [核心修改] 升级关键词和搜索逻辑 ---
 # 关键词必须出现在标题中，内容更聚焦
